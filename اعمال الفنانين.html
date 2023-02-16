@@ -1,0 +1,3220 @@
+<html>
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <style>
+                        div{
+    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(162, 34, 34);
+}
+h1{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: brown;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+padding-top: 20px;
+padding-bottom: 20px;
+width: 200pX;
+text-align:center;
+
+    
+}
+p {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: left;
+
+}
+h3 {
+
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    color: rgb(90, 84, 158);
+
+}
+
+
+
+            </style>
+            
+    </head>
+
+    <body>
+
+      
+       <h1 id="char"></h1>  
+      
+       <h3>your avrage is : </h3> <h3 id="average"> dx</h3><h3 id="NOFaults"></h3><h3 id="quetionNumber"></h3>
+        <h3 id="rightOrFault">right</h3>
+
+
+       <div>
+          <h1> </h1>
+          <h1>Choose [(), (), (), ()]</h1>
+
+
+       </div>
+
+
+
+
+
+
+
+       <p>1.  هيكل ميدور</p>
+       <button id="1" onclick="r1()"> روبرت كمبان</button>
+       <button id="2" onclick="f1()">ماساشو </button>
+       <button id="3" onclick="f1()">  دافنشي</button>
+       <button id="4" onclick="f1()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>2.  طرد ادم وحواء من الجنه</p>
+       
+       <button id="6" onclick="f2()">روبرت كمبان </button><button id="5" onclick="r2()"> ماساشو</button>
+       <button id="7" onclick="f2()">  دافنشي</button>
+       <button id="8" onclick="f2()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>3.  الجزيه</p>
+       
+       <button id="10" onclick="f3()">روبرت كمبان </button><button id="9" onclick="r3()"> ماساشو</button>
+       <button id="11" onclick="f3()"> دافنشي </button>
+       <button id="12" onclick="f3()">رافيل سانزو </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>4.  العزراء والطفل </p>
+       
+       <button id="14" onclick="f4()">روبرت كمبان </button>
+       <button id="15" onclick="f4()"> ماساشو</button><button id="13" onclick="r4()"> دافنشي </button>
+       <button id="16" onclick="f4()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>5. القديسه ان </p>
+       
+       <button id="18" onclick="f5()"> روبرت كمبان</button>
+       <button id="19" onclick="f5()">ماساشو </button><button id="17" onclick="r5()">  دافنشي</button>
+       <button id="20" onclick="f5()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>6.  عزراء الزهره</p>
+       
+       <button id="22" onclick="f6()">روبرت كمبان </button>
+       <button id="23" onclick="f6()">ماساشو </button>
+       <button id="24" onclick="f6()">  دافنشي</button><button id="21" onclick="r6()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>7.  انتصار جاليتا</p>
+       
+       <button id="26" onclick="f7()"> روبرت كمبان</button>
+       <button id="27" onclick="f7()"> ماساشو</button>
+       <button id="28" onclick="f7()">  دافنشي</button><button id="25" onclick="r7()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>8.  العزراء وطفلها</p>
+       
+       <button id="30" onclick="f8()">روبرت كمبان </button>
+       <button id="31" onclick="f8()"> ماساشو</button>
+       <button id="32" onclick="f8()">  دافنشي</button><button id="29" onclick="r8()">رافيل سانزو </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>9.  طفل يوحنا</p>
+       
+       <button id="34" onclick="f9()">روبرت كمبان </button>
+       <button id="35" onclick="f9()"> ماساشو</button>
+       <button id="36" onclick="f9()">  دافنشي</button><button id="33" onclick="r9()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>10.  مدرسه اثينا</p>
+       
+       <button id="38" onclick="f10()"> روبرت كمبان</button>
+       <button id="39" onclick="f10()"> ماساشو</button>
+       <button id="40" onclick="f10()"> دافنشي </button><button id="37" onclick="r10()"> رافيل سانزو</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>11.  انا وساسكيا </p>
+       <button id="41" onclick="r11()"> رمبرانت </button>
+       <button id="42" onclick="f11()">بول روبينز </button>
+       <button id="43" onclick="f11()">بوشيه </button>
+       <button id="44" onclick="f11()"> فراجونار</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>12. دوريه الليل  </p>
+       <button id="45" onclick="r12()"> رمبرانت </button>
+       <button id="46" onclick="f12()">بول روبينز </button>
+       <button id="47" onclick="f12()"> بوشيه</button>
+       <button id="48" onclick="f12()">فراجونار </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>13. عوده الابن الضال </p>
+       <button id="49" onclick="r13()"> رمبرانت </button>
+       <button id="50" onclick="f13()">بول روبينز </button>
+       <button id="51" onclick="f13()"> بوشيه</button>
+       <button id="52" onclick="f13()">فراجونار </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>14.  مدام بوميادور</p>
+       
+       <button id="54" onclick="f14()">بول روبينز </button>
+       <button id="55" onclick="f14()"> رمبرانت</button><button id="53" onclick="r14()">  بوشيه</button>
+       <button id="56" onclick="f14()">فراجونار </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>15.  ميلاد فينوس</p>
+       
+       <button id="58" onclick="f15()">بول روبينز </button>
+       <button id="59" onclick="f15()">رمبرانت </button><button id="57" onclick="r15()">  بوشيه</button>
+       <button id="60" onclick="f15()">فراجونار </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>16.  مدام دوباري</p>
+       
+       <button id="62" onclick="f16()"> بول روبينز</button>
+       <button id="63" onclick="f16()"> رمبرانت</button>
+       <button id="64" onclick="f16()"> بوشيه</button><button id="61" onclick="r16()"> فراجونار</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>17.  لعبه الرجل الاعمي والطفل</p>
+       
+       <button id="66" onclick="f17()"> بول روبينز</button>
+       <button id="67" onclick="f17()"> رمبرانت</button>
+       <button id="68" onclick="f17()"> بوشيه</button><button id="65" onclick="r17()">فراجونار </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>18. قسم الاخوه هوراس </p>
+       <button id="69" onclick="r18()"> جاك لويس دافيد</button>
+       <button id="70" onclick="f18()">  انطوان جرو</button>
+       <button id="71" onclick="f18()">بينيمين ويست </button>
+       <button id="72" onclick="f18()">جون كويلي </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>19. لوحه تتويج نابليون </p>
+       <button id="73" onclick="r19()"> جاك لويس دافيد</button>
+       <button id="74" onclick="f19()">  انطوان جرو</button>
+       <button id="75" onclick="f19()">بينيمين ويست </button>
+       <button id="76" onclick="f19()">جون كويلي </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>20.  وباء يافا</p>
+       
+       <button id="78" onclick="f20()">جاك لويس دافيد </button><button id="77" onclick="r20()">  انطوان جرو</button>
+       <button id="79" onclick="f20()">بينيمين ويست </button>
+       <button id="80" onclick="f20()"> جون كويلي</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>21. وفاه الجنرال ولف </p>
+       
+       <button id="82" onclick="f21()">جاك لويس دافيد </button>
+       <button id="83" onclick="f21()">  انطوان جرو</button><button id="81" onclick="r21()"> بينيمين ويست</button>
+       <button id="84" onclick="f21()"> جون كويلي</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>22.  واطسن وسمك القرش</p>
+       
+       <button id="86" onclick="f22()">جاك لويس دافيد </button>
+       <button id="87" onclick="f22()">  انطوان جرو</button>
+       <button id="88" onclick="f22()"> بينيمين ويست</button><button id="85" onclick="r22()">جون كويلي </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>23.  عربه الدرجه الثالثه </p>
+       <button id="89" onclick="r23()"> هونريه دوميه</button>
+       <button id="90" onclick="f23()">جوستاف كوربيه </button>
+       <button id="91" onclick="f23()"> اوجست رينوار</button>
+       <button id="92" onclick="f23()">  ادوار مونيه</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>24. لوحه المجلس التريعي </p>
+       <button id="93" onclick="r24()">هونريه دوميه </button>
+       <button id="94" onclick="f24()"> جوستاف كوربيه</button>
+       <button id="95" onclick="f24()"> اوجست رينوار</button>
+       <button id="96" onclick="f24()"> ادوار مونيه </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>25.  محطمو الصخر </p>
+       
+       <button id="98" onclick="f25()">هونريه دوميه </button><button id="97" onclick="r25()"> جوستاف كوربيه</button>
+       <button id="99" onclick="f25()"> اوجست رينوار</button>
+       <button id="100" onclick="f25()">  ادوار مونيه</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>26.  جنازه في قريه اورزانز</p>
+       
+       <button id="102" onclick="f26()">هونريه دوميه </button><button id="101" onclick="r26()"> جوستاف كوربيه</button>
+       <button id="103" onclick="f26()"> اوجست رينوار</button>
+       <button id="104" onclick="f26()">  ادوار مونيه</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>27.  الغذاء فوق العشب</p>
+       
+       <button id="106" onclick="f27()"> هونريه دوميه</button>
+       <button id="107" onclick="f27()"> جوستاف كوربيه</button>
+       <button id="108" onclick="f27()">  ادوار مونيه</button><button id="105" onclick="r27()"> اوجست رينوار</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>28.  اولمبيا</p>
+       
+       <button id="110" onclick="f28()"> هونريه دوميه</button>
+       <button id="111" onclick="f28()"> جوستاف كوربيه</button>
+       <button id="112" onclick="f28()"> </button><button id="109" onclick="r28()"> اوجست رينوار</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>29.  السيرك والباليه/p>
+       
+       <button id="114" onclick="f29()"> بول سيزان </button>
+       <button id="115" onclick="f29()"> فان جوخ</button>
+       <button id="116" onclick="f29()"> جوجان</button><button id="113" onclick="r29()">جورج سورا </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>30.  الطبيعه الساكنه </p>
+       <button id="117" onclick="r30()">بول سيزان  </button>
+       <button id="118" onclick="f30()">فان جوخ </button>
+       <button id="119" onclick="f30()"> جوجان</button>
+       <button id="120" onclick="f30()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>31.  قمه سان فيكتوريا</p>
+       <button id="121" onclick="r31()">بول سيزان  </button>
+       <button id="122" onclick="f31()"> فان جوخ</button>
+       <button id="123" onclick="f31()"> جوجان</button>
+       <button id="124" onclick="f31()">جورج سورا </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>32.  لاعبو الورق</p>
+       <button id="125" onclick="r32()">بول سيزان  </button>
+       <button id="126" onclick="f32()"> فان جوخ</button>
+       <button id="127" onclick="f32()">جوجان </button>
+       <button id="128" onclick="f32()">جورج سورا </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>33.  اكلي البطاطس </p>
+       
+       <button id="130" onclick="f33()">بول سيزان  </button><button id="129" onclick="r33()"> فان جوخ</button>
+       <button id="131" onclick="f33()"> جوجان</button>
+       <button id="132" onclick="f33()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>34.  عباد الشمس </p>
+       
+       <button id="134" onclick="f34()">بول سيزان  </button><button id="133" onclick="r34()"> فان جوخ</button>
+       <button id="135" onclick="f34()"> جوجان</button>
+       <button id="136" onclick="f34()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>35.  حجره الفنان</p>
+       
+       <button id="138" onclick="f35()">بول سيزان  </button><button id="137" onclick="r35()">فان جوخ </button>
+       <button id="139" onclick="f35()">جوجان </button>
+       <button id="140" onclick="f35()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>36.  صور ذاتيه</p>
+       
+       <button id="142" onclick="f36()"> بول سيزان </button><button id="141" onclick="r36()">فان جوخ </button>
+       <button id="143" onclick="f36()"> جوجان</button>
+       <button id="144" onclick="f36()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>37. صلب المسيح </p>
+       
+       <button id="146" onclick="f37()"> بول سيزان </button>
+       <button id="147" onclick="f37()">فان جوخ </button><button id="145" onclick="r37()"> جوجان</button>
+       <button id="148" onclick="f37()"> جورج سورا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>38.  رقصه الحياه</p>
+       
+       <button id="150" onclick="f38()">جيمس انسور </button>
+       <button id="151" onclick="f38()"> </button><button id="149" onclick="r38()">ادوارد مونخ </button>
+       <button id="152" onclick="f38()"> ا</button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>39.  الصرخه</p>
+       <button id="154" onclick="f39()"> جيمس انسور</button>
+       <button id="155" onclick="f39()"> هنري ماتيس</button>
+       <button id="153" onclick="r39()"> ادوارد مونخ</button>
+       <button id="156" onclick="f39()">بيكاسو  </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>40.  المؤامره </p>
+       <button id="157" onclick="r40()">جيمس انسور </button>
+       <button id="158" onclick="f40()"> هنري ماتيس</button>
+       <button id="159" onclick="f40()">ادوارد مونخ </button>
+       <button id="160" onclick="f40()">بيكاسو  </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>41.  المسيح يهدي</p>
+       <button id="161" onclick="r41()">جيمس انسور </button>
+       <button id="162" onclick="f41()"> هنري ماتيس</button>
+       <button id="163" onclick="f41()">ادوارد مونخ </button>
+       <button id="164" onclick="f41()">براك  </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>42.  الامواح</p>
+       <button id="165" onclick="r42()">جيمس انسور </button>
+       <button id="166" onclick="f42()">هنري ماتيس </button>
+       <button id="167" onclick="f42()">ادوارد مونخ </button>
+       <button id="168" onclick="f42()">براك </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>43.  الجاريه واللوحات الريفيه</p>
+       
+       <button id="170" onclick="f43()"> جيمس انسور</button><button id="169" onclick="r43()">هنري ماتيس </button>
+       <button id="171" onclick="f43()">ادوارد مونخ </button>
+       <button id="172" onclick="f43()"> </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>44.  الغرفه الحمراء </p>
+       
+       <button id="174" onclick="f44()">جيمس انسور </button><button id="173" onclick="r44()">هنري ماتيس </button>
+       <button id="175" onclick="f44()"> ادوارد مونخ</button>
+       <button id="176" onclick="f44()">براك </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>45.  الشطرنج</p>
+       
+       <button id="178" onclick="f45()"> جيمس انسور</button><button id="177" onclick="r45()"> هنري ماتيس</button>
+       <button id="179" onclick="f45()">ادوارد مونخ </button>
+       <button id="180" onclick="f45()">براك </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>46.  ناقل الاخبار</p>
+       
+       <button id="182" onclick="f46()"> جيمس انسور</button>
+       <button id="183" onclick="f46()">ادوارد مونخ </button>
+       <button id="184" onclick="f46()"> هنري ماتيس</button><button id="181" onclick="r46()">براك </button>
+       <br>
+       <!--
+       button.html:269 -->
+       <p>47. الطبيعه الصامته </p>
+       
+       <button id="186" onclick="f47()">جيمس انسور </button>
+       <button id="187" onclick="f47()"> ادوارد مونخ</button>
+       <button id="188" onclick="f47()"> هنري ماتيس</button><button id="185" onclick="r47()">براك </button>
+       <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <br><br><br></p><hr>
+       <h1 id="Fault"></h1>
+       <h1 id="riaht">Right answers :</h1>
+       <h1 id="theQuestionNumbers">theQuestionNumbers : </h1>
+
+                       
+
+                               
+           <p id="rightOrFault"></p>
+
+           <script>
+            alert("hello ahmed");
+document.getElementById("char").innerHTML="";
+
+var avrage=0;
+var questionNumber=0;
+var NOFaults=0;           
+
+
+
+/*
+button.html:79  */function r1()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("1").disabled=true; 
+  ;document.getElementById("2").disabled=true; 
+  ;document.getElementById("3").disabled=true; 
+  ;document.getElementById("4").disabled=true; 
+  ;document.getElementById("1").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f1()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("1").disabled=true; 
+  ;document.getElementById("2").disabled=true; 
+  ;document.getElementById("3").disabled=true; 
+  ;document.getElementById("4").disabled=true; 
+  ;document.getElementById("1").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q2
+/*
+button.html:79  */function r2()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("5").disabled=true; 
+  ;document.getElementById("6").disabled=true; 
+  ;document.getElementById("7").disabled=true; 
+  ;document.getElementById("8").disabled=true; 
+  ;document.getElementById("5").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f2()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("5").disabled=true; 
+  ;document.getElementById("6").disabled=true; 
+  ;document.getElementById("7").disabled=true; 
+  ;document.getElementById("8").disabled=true; 
+  ;document.getElementById("5").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q3
+/*
+button.html:79  */function r3()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("9").disabled=true; 
+  ;document.getElementById("10").disabled=true; 
+  ;document.getElementById("11").disabled=true; 
+  ;document.getElementById("12").disabled=true; 
+  ;document.getElementById("9").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f3()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("9").disabled=true; 
+  ;document.getElementById("10").disabled=true; 
+  ;document.getElementById("11").disabled=true; 
+  ;document.getElementById("12").disabled=true; 
+  ;document.getElementById("9").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q4
+/*
+button.html:79  */function r4()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("13").disabled=true; 
+  ;document.getElementById("14").disabled=true; 
+  ;document.getElementById("15").disabled=true; 
+  ;document.getElementById("16").disabled=true; 
+  ;document.getElementById("13").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f4()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("13").disabled=true; 
+  ;document.getElementById("14").disabled=true; 
+  ;document.getElementById("15").disabled=true; 
+  ;document.getElementById("16").disabled=true; 
+  ;document.getElementById("13").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q5
+/*
+button.html:79  */function r5()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("17").disabled=true; 
+  ;document.getElementById("18").disabled=true; 
+  ;document.getElementById("19").disabled=true; 
+  ;document.getElementById("20").disabled=true; 
+  ;document.getElementById("17").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f5()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("17").disabled=true; 
+  ;document.getElementById("18").disabled=true; 
+  ;document.getElementById("19").disabled=true; 
+  ;document.getElementById("20").disabled=true; 
+  ;document.getElementById("17").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q6
+/*
+button.html:79  */function r6()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("21").disabled=true; 
+  ;document.getElementById("22").disabled=true; 
+  ;document.getElementById("23").disabled=true; 
+  ;document.getElementById("24").disabled=true; 
+  ;document.getElementById("21").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f6()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("21").disabled=true; 
+  ;document.getElementById("22").disabled=true; 
+  ;document.getElementById("23").disabled=true; 
+  ;document.getElementById("24").disabled=true; 
+  ;document.getElementById("21").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q7
+/*
+button.html:79  */function r7()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("25").disabled=true; 
+  ;document.getElementById("26").disabled=true; 
+  ;document.getElementById("27").disabled=true; 
+  ;document.getElementById("28").disabled=true; 
+  ;document.getElementById("25").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f7()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("25").disabled=true; 
+  ;document.getElementById("26").disabled=true; 
+  ;document.getElementById("27").disabled=true; 
+  ;document.getElementById("28").disabled=true; 
+  ;document.getElementById("25").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q8
+/*
+button.html:79  */function r8()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("29").disabled=true; 
+  ;document.getElementById("30").disabled=true; 
+  ;document.getElementById("31").disabled=true; 
+  ;document.getElementById("32").disabled=true; 
+  ;document.getElementById("29").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f8()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("29").disabled=true; 
+  ;document.getElementById("30").disabled=true; 
+  ;document.getElementById("31").disabled=true; 
+  ;document.getElementById("32").disabled=true; 
+  ;document.getElementById("29").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q9
+/*
+button.html:79  */function r9()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("33").disabled=true; 
+  ;document.getElementById("34").disabled=true; 
+  ;document.getElementById("35").disabled=true; 
+  ;document.getElementById("36").disabled=true; 
+  ;document.getElementById("33").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f9()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("33").disabled=true; 
+  ;document.getElementById("34").disabled=true; 
+  ;document.getElementById("35").disabled=true; 
+  ;document.getElementById("36").disabled=true; 
+  ;document.getElementById("33").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q10
+/*
+button.html:79  */function r10()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("37").disabled=true; 
+  ;document.getElementById("38").disabled=true; 
+  ;document.getElementById("39").disabled=true; 
+  ;document.getElementById("40").disabled=true; 
+  ;document.getElementById("37").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f10()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("37").disabled=true; 
+  ;document.getElementById("38").disabled=true; 
+  ;document.getElementById("39").disabled=true; 
+  ;document.getElementById("40").disabled=true; 
+  ;document.getElementById("37").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q11
+/*
+button.html:79  */function r11()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("41").disabled=true; 
+  ;document.getElementById("42").disabled=true; 
+  ;document.getElementById("43").disabled=true; 
+  ;document.getElementById("44").disabled=true; 
+  ;document.getElementById("41").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f11()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("41").disabled=true; 
+  ;document.getElementById("42").disabled=true; 
+  ;document.getElementById("43").disabled=true; 
+  ;document.getElementById("44").disabled=true; 
+  ;document.getElementById("41").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q12
+/*
+button.html:79  */function r12()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("45").disabled=true; 
+  ;document.getElementById("46").disabled=true; 
+  ;document.getElementById("47").disabled=true; 
+  ;document.getElementById("48").disabled=true; 
+  ;document.getElementById("45").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f12()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("45").disabled=true; 
+  ;document.getElementById("46").disabled=true; 
+  ;document.getElementById("47").disabled=true; 
+  ;document.getElementById("48").disabled=true; 
+  ;document.getElementById("45").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q13
+/*
+button.html:79  */function r13()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("49").disabled=true; 
+  ;document.getElementById("50").disabled=true; 
+  ;document.getElementById("51").disabled=true; 
+  ;document.getElementById("52").disabled=true; 
+  ;document.getElementById("49").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f13()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("49").disabled=true; 
+  ;document.getElementById("50").disabled=true; 
+  ;document.getElementById("51").disabled=true; 
+  ;document.getElementById("52").disabled=true; 
+  ;document.getElementById("49").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q14
+/*
+button.html:79  */function r14()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("53").disabled=true; 
+  ;document.getElementById("54").disabled=true; 
+  ;document.getElementById("55").disabled=true; 
+  ;document.getElementById("56").disabled=true; 
+  ;document.getElementById("53").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f14()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("53").disabled=true; 
+  ;document.getElementById("54").disabled=true; 
+  ;document.getElementById("55").disabled=true; 
+  ;document.getElementById("56").disabled=true; 
+  ;document.getElementById("53").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q15
+/*
+button.html:79  */function r15()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("57").disabled=true; 
+  ;document.getElementById("58").disabled=true; 
+  ;document.getElementById("59").disabled=true; 
+  ;document.getElementById("60").disabled=true; 
+  ;document.getElementById("57").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f15()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("57").disabled=true; 
+  ;document.getElementById("58").disabled=true; 
+  ;document.getElementById("59").disabled=true; 
+  ;document.getElementById("60").disabled=true; 
+  ;document.getElementById("57").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q16
+/*
+button.html:79  */function r16()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("61").disabled=true; 
+  ;document.getElementById("62").disabled=true; 
+  ;document.getElementById("63").disabled=true; 
+  ;document.getElementById("64").disabled=true; 
+  ;document.getElementById("61").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f16()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("61").disabled=true; 
+  ;document.getElementById("62").disabled=true; 
+  ;document.getElementById("63").disabled=true; 
+  ;document.getElementById("64").disabled=true; 
+  ;document.getElementById("61").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q17
+/*
+button.html:79  */function r17()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("65").disabled=true; 
+  ;document.getElementById("66").disabled=true; 
+  ;document.getElementById("67").disabled=true; 
+  ;document.getElementById("68").disabled=true; 
+  ;document.getElementById("65").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f17()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("65").disabled=true; 
+  ;document.getElementById("66").disabled=true; 
+  ;document.getElementById("67").disabled=true; 
+  ;document.getElementById("68").disabled=true; 
+  ;document.getElementById("65").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q18
+/*
+button.html:79  */function r18()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("69").disabled=true; 
+  ;document.getElementById("70").disabled=true; 
+  ;document.getElementById("71").disabled=true; 
+  ;document.getElementById("72").disabled=true; 
+  ;document.getElementById("69").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f18()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("69").disabled=true; 
+  ;document.getElementById("70").disabled=true; 
+  ;document.getElementById("71").disabled=true; 
+  ;document.getElementById("72").disabled=true; 
+  ;document.getElementById("69").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q19
+/*
+button.html:79  */function r19()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("73").disabled=true; 
+  ;document.getElementById("74").disabled=true; 
+  ;document.getElementById("75").disabled=true; 
+  ;document.getElementById("76").disabled=true; 
+  ;document.getElementById("73").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f19()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("73").disabled=true; 
+  ;document.getElementById("74").disabled=true; 
+  ;document.getElementById("75").disabled=true; 
+  ;document.getElementById("76").disabled=true; 
+  ;document.getElementById("73").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q20
+/*
+button.html:79  */function r20()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("77").disabled=true; 
+  ;document.getElementById("78").disabled=true; 
+  ;document.getElementById("79").disabled=true; 
+  ;document.getElementById("80").disabled=true; 
+  ;document.getElementById("77").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f20()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("77").disabled=true; 
+  ;document.getElementById("78").disabled=true; 
+  ;document.getElementById("79").disabled=true; 
+  ;document.getElementById("80").disabled=true; 
+  ;document.getElementById("77").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q21
+/*
+button.html:79  */function r21()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("81").disabled=true; 
+  ;document.getElementById("82").disabled=true; 
+  ;document.getElementById("83").disabled=true; 
+  ;document.getElementById("84").disabled=true; 
+  ;document.getElementById("81").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f21()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("81").disabled=true; 
+  ;document.getElementById("82").disabled=true; 
+  ;document.getElementById("83").disabled=true; 
+  ;document.getElementById("84").disabled=true; 
+  ;document.getElementById("81").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q22
+/*
+button.html:79  */function r22()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("85").disabled=true; 
+  ;document.getElementById("86").disabled=true; 
+  ;document.getElementById("87").disabled=true; 
+  ;document.getElementById("88").disabled=true; 
+  ;document.getElementById("85").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f22()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("85").disabled=true; 
+  ;document.getElementById("86").disabled=true; 
+  ;document.getElementById("87").disabled=true; 
+  ;document.getElementById("88").disabled=true; 
+  ;document.getElementById("85").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q23
+/*
+button.html:79  */function r23()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("89").disabled=true; 
+  ;document.getElementById("90").disabled=true; 
+  ;document.getElementById("91").disabled=true; 
+  ;document.getElementById("92").disabled=true; 
+  ;document.getElementById("89").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f23()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("89").disabled=true; 
+  ;document.getElementById("90").disabled=true; 
+  ;document.getElementById("91").disabled=true; 
+  ;document.getElementById("92").disabled=true; 
+  ;document.getElementById("89").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q24
+/*
+button.html:79  */function r24()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("93").disabled=true; 
+  ;document.getElementById("94").disabled=true; 
+  ;document.getElementById("95").disabled=true; 
+  ;document.getElementById("96").disabled=true; 
+  ;document.getElementById("93").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f24()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("93").disabled=true; 
+  ;document.getElementById("94").disabled=true; 
+  ;document.getElementById("95").disabled=true; 
+  ;document.getElementById("96").disabled=true; 
+  ;document.getElementById("93").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q25
+/*
+button.html:79  */function r25()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("97").disabled=true; 
+  ;document.getElementById("98").disabled=true; 
+  ;document.getElementById("99").disabled=true; 
+  ;document.getElementById("100").disabled=true; 
+  ;document.getElementById("97").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f25()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("97").disabled=true; 
+  ;document.getElementById("98").disabled=true; 
+  ;document.getElementById("99").disabled=true; 
+  ;document.getElementById("100").disabled=true; 
+  ;document.getElementById("97").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q26
+/*
+button.html:79  */function r26()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("101").disabled=true; 
+  ;document.getElementById("102").disabled=true; 
+  ;document.getElementById("103").disabled=true; 
+  ;document.getElementById("104").disabled=true; 
+  ;document.getElementById("101").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f26()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("101").disabled=true; 
+  ;document.getElementById("102").disabled=true; 
+  ;document.getElementById("103").disabled=true; 
+  ;document.getElementById("104").disabled=true; 
+  ;document.getElementById("101").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q27
+/*
+button.html:79  */function r27()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("105").disabled=true; 
+  ;document.getElementById("106").disabled=true; 
+  ;document.getElementById("107").disabled=true; 
+  ;document.getElementById("108").disabled=true; 
+  ;document.getElementById("105").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f27()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("105").disabled=true; 
+  ;document.getElementById("106").disabled=true; 
+  ;document.getElementById("107").disabled=true; 
+  ;document.getElementById("108").disabled=true; 
+  ;document.getElementById("105").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q28
+/*
+button.html:79  */function r28()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("109").disabled=true; 
+  ;document.getElementById("110").disabled=true; 
+  ;document.getElementById("111").disabled=true; 
+  ;document.getElementById("112").disabled=true; 
+  ;document.getElementById("109").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f28()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("109").disabled=true; 
+  ;document.getElementById("110").disabled=true; 
+  ;document.getElementById("111").disabled=true; 
+  ;document.getElementById("112").disabled=true; 
+  ;document.getElementById("109").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q29
+/*
+button.html:79  */function r29()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("113").disabled=true; 
+  ;document.getElementById("114").disabled=true; 
+  ;document.getElementById("115").disabled=true; 
+  ;document.getElementById("116").disabled=true; 
+  ;document.getElementById("113").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f29()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("113").disabled=true; 
+  ;document.getElementById("114").disabled=true; 
+  ;document.getElementById("115").disabled=true; 
+  ;document.getElementById("116").disabled=true; 
+  ;document.getElementById("113").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q30
+/*
+button.html:79  */function r30()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("117").disabled=true; 
+  ;document.getElementById("118").disabled=true; 
+  ;document.getElementById("119").disabled=true; 
+  ;document.getElementById("120").disabled=true; 
+  ;document.getElementById("117").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f30()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("117").disabled=true; 
+  ;document.getElementById("118").disabled=true; 
+  ;document.getElementById("119").disabled=true; 
+  ;document.getElementById("120").disabled=true; 
+  ;document.getElementById("117").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q31
+/*
+button.html:79  */function r31()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("121").disabled=true; 
+  ;document.getElementById("122").disabled=true; 
+  ;document.getElementById("123").disabled=true; 
+  ;document.getElementById("124").disabled=true; 
+  ;document.getElementById("121").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f31()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("121").disabled=true; 
+  ;document.getElementById("122").disabled=true; 
+  ;document.getElementById("123").disabled=true; 
+  ;document.getElementById("124").disabled=true; 
+  ;document.getElementById("121").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q32
+/*
+button.html:79  */function r32()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("125").disabled=true; 
+  ;document.getElementById("126").disabled=true; 
+  ;document.getElementById("127").disabled=true; 
+  ;document.getElementById("128").disabled=true; 
+  ;document.getElementById("125").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f32()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("125").disabled=true; 
+  ;document.getElementById("126").disabled=true; 
+  ;document.getElementById("127").disabled=true; 
+  ;document.getElementById("128").disabled=true; 
+  ;document.getElementById("125").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q33
+/*
+button.html:79  */function r33()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("129").disabled=true; 
+  ;document.getElementById("130").disabled=true; 
+  ;document.getElementById("131").disabled=true; 
+  ;document.getElementById("132").disabled=true; 
+  ;document.getElementById("129").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f33()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("129").disabled=true; 
+  ;document.getElementById("130").disabled=true; 
+  ;document.getElementById("131").disabled=true; 
+  ;document.getElementById("132").disabled=true; 
+  ;document.getElementById("129").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q34
+/*
+button.html:79  */function r34()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("133").disabled=true; 
+  ;document.getElementById("134").disabled=true; 
+  ;document.getElementById("135").disabled=true; 
+  ;document.getElementById("136").disabled=true; 
+  ;document.getElementById("133").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f34()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("133").disabled=true; 
+  ;document.getElementById("134").disabled=true; 
+  ;document.getElementById("135").disabled=true; 
+  ;document.getElementById("136").disabled=true; 
+  ;document.getElementById("133").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q35
+/*
+button.html:79  */function r35()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("137").disabled=true; 
+  ;document.getElementById("138").disabled=true; 
+  ;document.getElementById("139").disabled=true; 
+  ;document.getElementById("140").disabled=true; 
+  ;document.getElementById("137").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f35()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("137").disabled=true; 
+  ;document.getElementById("138").disabled=true; 
+  ;document.getElementById("139").disabled=true; 
+  ;document.getElementById("140").disabled=true; 
+  ;document.getElementById("137").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q36
+/*
+button.html:79  */function r36()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("141").disabled=true; 
+  ;document.getElementById("142").disabled=true; 
+  ;document.getElementById("143").disabled=true; 
+  ;document.getElementById("144").disabled=true; 
+  ;document.getElementById("141").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f36()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("141").disabled=true; 
+  ;document.getElementById("142").disabled=true; 
+  ;document.getElementById("143").disabled=true; 
+  ;document.getElementById("144").disabled=true; 
+  ;document.getElementById("141").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q37
+/*
+button.html:79  */function r37()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("145").disabled=true; 
+  ;document.getElementById("146").disabled=true; 
+  ;document.getElementById("147").disabled=true; 
+  ;document.getElementById("148").disabled=true; 
+  ;document.getElementById("145").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f37()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("145").disabled=true; 
+  ;document.getElementById("146").disabled=true; 
+  ;document.getElementById("147").disabled=true; 
+  ;document.getElementById("148").disabled=true; 
+  ;document.getElementById("145").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q38
+/*
+button.html:79  */function r38()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("149").disabled=true; 
+  ;document.getElementById("150").disabled=true; 
+  ;document.getElementById("151").disabled=true; 
+  ;document.getElementById("152").disabled=true; 
+  ;document.getElementById("149").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f38()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("149").disabled=true; 
+  ;document.getElementById("150").disabled=true; 
+  ;document.getElementById("151").disabled=true; 
+  ;document.getElementById("152").disabled=true; 
+  ;document.getElementById("149").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q39
+/*
+button.html:79  */function r39()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("153").disabled=true; 
+  ;document.getElementById("154").disabled=true; 
+  ;document.getElementById("155").disabled=true; 
+  ;document.getElementById("156").disabled=true; 
+  ;document.getElementById("153").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f39()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("153").disabled=true; 
+  ;document.getElementById("154").disabled=true; 
+  ;document.getElementById("155").disabled=true; 
+  ;document.getElementById("156").disabled=true; 
+  ;document.getElementById("153").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q40
+/*
+button.html:79  */function r40()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("157").disabled=true; 
+  ;document.getElementById("158").disabled=true; 
+  ;document.getElementById("159").disabled=true; 
+  ;document.getElementById("160").disabled=true; 
+  ;document.getElementById("157").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f40()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("157").disabled=true; 
+  ;document.getElementById("158").disabled=true; 
+  ;document.getElementById("159").disabled=true; 
+  ;document.getElementById("160").disabled=true; 
+  ;document.getElementById("157").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q41
+/*
+button.html:79  */function r41()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("161").disabled=true; 
+  ;document.getElementById("162").disabled=true; 
+  ;document.getElementById("163").disabled=true; 
+  ;document.getElementById("164").disabled=true; 
+  ;document.getElementById("161").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f41()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("161").disabled=true; 
+  ;document.getElementById("162").disabled=true; 
+  ;document.getElementById("163").disabled=true; 
+  ;document.getElementById("164").disabled=true; 
+  ;document.getElementById("161").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q42
+/*
+button.html:79  */function r42()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("165").disabled=true; 
+  ;document.getElementById("166").disabled=true; 
+  ;document.getElementById("167").disabled=true; 
+  ;document.getElementById("168").disabled=true; 
+  ;document.getElementById("165").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f42()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("165").disabled=true; 
+  ;document.getElementById("166").disabled=true; 
+  ;document.getElementById("167").disabled=true; 
+  ;document.getElementById("168").disabled=true; 
+  ;document.getElementById("165").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q43
+/*
+button.html:79  */function r43()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("169").disabled=true; 
+  ;document.getElementById("170").disabled=true; 
+  ;document.getElementById("171").disabled=true; 
+  ;document.getElementById("172").disabled=true; 
+  ;document.getElementById("169").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f43()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("169").disabled=true; 
+  ;document.getElementById("170").disabled=true; 
+  ;document.getElementById("171").disabled=true; 
+  ;document.getElementById("172").disabled=true; 
+  ;document.getElementById("169").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q44
+/*
+button.html:79  */function r44()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("173").disabled=true; 
+  ;document.getElementById("174").disabled=true; 
+  ;document.getElementById("175").disabled=true; 
+  ;document.getElementById("176").disabled=true; 
+  ;document.getElementById("173").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f44()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("173").disabled=true; 
+  ;document.getElementById("174").disabled=true; 
+  ;document.getElementById("175").disabled=true; 
+  ;document.getElementById("176").disabled=true; 
+  ;document.getElementById("173").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q45
+/*
+button.html:79  */function r45()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("177").disabled=true; 
+  ;document.getElementById("178").disabled=true; 
+  ;document.getElementById("179").disabled=true; 
+  ;document.getElementById("180").disabled=true; 
+  ;document.getElementById("177").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f45()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("177").disabled=true; 
+  ;document.getElementById("178").disabled=true; 
+  ;document.getElementById("179").disabled=true; 
+  ;document.getElementById("180").disabled=true; 
+  ;document.getElementById("177").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q46
+/*
+button.html:79  */function r46()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("181").disabled=true; 
+  ;document.getElementById("182").disabled=true; 
+  ;document.getElementById("183").disabled=true; 
+  ;document.getElementById("184").disabled=true; 
+  ;document.getElementById("181").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f46()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("181").disabled=true; 
+  ;document.getElementById("182").disabled=true; 
+  ;document.getElementById("183").disabled=true; 
+  ;document.getElementById("184").disabled=true; 
+  ;document.getElementById("181").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q47
+/*
+button.html:79  */function r47()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("185").disabled=true; 
+  ;document.getElementById("186").disabled=true; 
+  ;document.getElementById("187").disabled=true; 
+  ;document.getElementById("188").disabled=true; 
+  ;document.getElementById("185").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f47()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("185").disabled=true; 
+  ;document.getElementById("186").disabled=true; 
+  ;document.getElementById("187").disabled=true; 
+  ;document.getElementById("188").disabled=true; 
+  ;document.getElementById("185").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q48
+/*
+button.html:79  */function r48()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("189").disabled=true; 
+  ;document.getElementById("190").disabled=true; 
+  ;document.getElementById("191").disabled=true; 
+  ;document.getElementById("192").disabled=true; 
+  ;document.getElementById("189").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f48()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("189").disabled=true; 
+  ;document.getElementById("190").disabled=true; 
+  ;document.getElementById("191").disabled=true; 
+  ;document.getElementById("192").disabled=true; 
+  ;document.getElementById("189").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q49
+/*
+button.html:79  */function r49()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("193").disabled=true; 
+  ;document.getElementById("194").disabled=true; 
+  ;document.getElementById("195").disabled=true; 
+  ;document.getElementById("196").disabled=true; 
+  ;document.getElementById("193").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f49()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("193").disabled=true; 
+  ;document.getElementById("194").disabled=true; 
+  ;document.getElementById("195").disabled=true; 
+  ;document.getElementById("196").disabled=true; 
+  ;document.getElementById("193").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q50
+/*
+button.html:79  */function r50()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("197").disabled=true; 
+  ;document.getElementById("198").disabled=true; 
+  ;document.getElementById("199").disabled=true; 
+  ;document.getElementById("200").disabled=true; 
+  ;document.getElementById("197").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f50()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("197").disabled=true; 
+  ;document.getElementById("198").disabled=true; 
+  ;document.getElementById("199").disabled=true; 
+  ;document.getElementById("200").disabled=true; 
+  ;document.getElementById("197").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q51
+/*
+button.html:79  */function r51()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("201").disabled=true; 
+  ;document.getElementById("202").disabled=true; 
+  ;document.getElementById("203").disabled=true; 
+  ;document.getElementById("204").disabled=true; 
+  ;document.getElementById("201").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f51()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("201").disabled=true; 
+  ;document.getElementById("202").disabled=true; 
+  ;document.getElementById("203").disabled=true; 
+  ;document.getElementById("204").disabled=true; 
+  ;document.getElementById("201").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q52
+/*
+button.html:79  */function r52()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("205").disabled=true; 
+  ;document.getElementById("206").disabled=true; 
+  ;document.getElementById("207").disabled=true; 
+  ;document.getElementById("208").disabled=true; 
+  ;document.getElementById("205").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f52()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("205").disabled=true; 
+  ;document.getElementById("206").disabled=true; 
+  ;document.getElementById("207").disabled=true; 
+  ;document.getElementById("208").disabled=true; 
+  ;document.getElementById("205").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q53
+/*
+button.html:79  */function r53()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("209").disabled=true; 
+  ;document.getElementById("210").disabled=true; 
+  ;document.getElementById("211").disabled=true; 
+  ;document.getElementById("212").disabled=true; 
+  ;document.getElementById("209").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f53()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("209").disabled=true; 
+  ;document.getElementById("210").disabled=true; 
+  ;document.getElementById("211").disabled=true; 
+  ;document.getElementById("212").disabled=true; 
+  ;document.getElementById("209").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q54
+/*
+button.html:79  */function r54()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("213").disabled=true; 
+  ;document.getElementById("214").disabled=true; 
+  ;document.getElementById("215").disabled=true; 
+  ;document.getElementById("216").disabled=true; 
+  ;document.getElementById("213").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f54()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("213").disabled=true; 
+  ;document.getElementById("214").disabled=true; 
+  ;document.getElementById("215").disabled=true; 
+  ;document.getElementById("216").disabled=true; 
+  ;document.getElementById("213").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q55
+/*
+button.html:79  */function r55()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("217").disabled=true; 
+  ;document.getElementById("218").disabled=true; 
+  ;document.getElementById("219").disabled=true; 
+  ;document.getElementById("220").disabled=true; 
+  ;document.getElementById("217").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f55()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("217").disabled=true; 
+  ;document.getElementById("218").disabled=true; 
+  ;document.getElementById("219").disabled=true; 
+  ;document.getElementById("220").disabled=true; 
+  ;document.getElementById("217").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q56
+/*
+button.html:79  */function r56()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("221").disabled=true; 
+  ;document.getElementById("222").disabled=true; 
+  ;document.getElementById("223").disabled=true; 
+  ;document.getElementById("224").disabled=true; 
+  ;document.getElementById("221").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f56()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("221").disabled=true; 
+  ;document.getElementById("222").disabled=true; 
+  ;document.getElementById("223").disabled=true; 
+  ;document.getElementById("224").disabled=true; 
+  ;document.getElementById("221").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q57
+/*
+button.html:79  */function r57()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("225").disabled=true; 
+  ;document.getElementById("226").disabled=true; 
+  ;document.getElementById("227").disabled=true; 
+  ;document.getElementById("228").disabled=true; 
+  ;document.getElementById("225").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f57()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("225").disabled=true; 
+  ;document.getElementById("226").disabled=true; 
+  ;document.getElementById("227").disabled=true; 
+  ;document.getElementById("228").disabled=true; 
+  ;document.getElementById("225").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q58
+/*
+button.html:79  */function r58()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("229").disabled=true; 
+  ;document.getElementById("230").disabled=true; 
+  ;document.getElementById("231").disabled=true; 
+  ;document.getElementById("232").disabled=true; 
+  ;document.getElementById("229").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f58()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("229").disabled=true; 
+  ;document.getElementById("230").disabled=true; 
+  ;document.getElementById("231").disabled=true; 
+  ;document.getElementById("232").disabled=true; 
+  ;document.getElementById("229").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q59
+/*
+button.html:79  */function r59()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("233").disabled=true; 
+  ;document.getElementById("234").disabled=true; 
+  ;document.getElementById("235").disabled=true; 
+  ;document.getElementById("236").disabled=true; 
+  ;document.getElementById("233").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f59()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("233").disabled=true; 
+  ;document.getElementById("234").disabled=true; 
+  ;document.getElementById("235").disabled=true; 
+  ;document.getElementById("236").disabled=true; 
+  ;document.getElementById("233").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q60
+/*
+button.html:79  */function r60()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("237").disabled=true; 
+  ;document.getElementById("238").disabled=true; 
+  ;document.getElementById("239").disabled=true; 
+  ;document.getElementById("240").disabled=true; 
+  ;document.getElementById("237").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f60()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("237").disabled=true; 
+  ;document.getElementById("238").disabled=true; 
+  ;document.getElementById("239").disabled=true; 
+  ;document.getElementById("240").disabled=true; 
+  ;document.getElementById("237").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q61
+/*
+button.html:79  */function r61()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("241").disabled=true; 
+  ;document.getElementById("242").disabled=true; 
+  ;document.getElementById("243").disabled=true; 
+  ;document.getElementById("244").disabled=true; 
+  ;document.getElementById("241").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f61()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("241").disabled=true; 
+  ;document.getElementById("242").disabled=true; 
+  ;document.getElementById("243").disabled=true; 
+  ;document.getElementById("244").disabled=true; 
+  ;document.getElementById("241").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q62
+/*
+button.html:79  */function r62()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("245").disabled=true; 
+  ;document.getElementById("246").disabled=true; 
+  ;document.getElementById("247").disabled=true; 
+  ;document.getElementById("248").disabled=true; 
+  ;document.getElementById("245").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f62()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("245").disabled=true; 
+  ;document.getElementById("246").disabled=true; 
+  ;document.getElementById("247").disabled=true; 
+  ;document.getElementById("248").disabled=true; 
+  ;document.getElementById("245").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q63
+/*
+button.html:79  */function r63()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("249").disabled=true; 
+  ;document.getElementById("250").disabled=true; 
+  ;document.getElementById("251").disabled=true; 
+  ;document.getElementById("252").disabled=true; 
+  ;document.getElementById("249").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f63()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("249").disabled=true; 
+  ;document.getElementById("250").disabled=true; 
+  ;document.getElementById("251").disabled=true; 
+  ;document.getElementById("252").disabled=true; 
+  ;document.getElementById("249").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q64
+/*
+button.html:79  */function r64()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("253").disabled=true; 
+  ;document.getElementById("254").disabled=true; 
+  ;document.getElementById("255").disabled=true; 
+  ;document.getElementById("256").disabled=true; 
+  ;document.getElementById("253").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f64()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("253").disabled=true; 
+  ;document.getElementById("254").disabled=true; 
+  ;document.getElementById("255").disabled=true; 
+  ;document.getElementById("256").disabled=true; 
+  ;document.getElementById("253").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q65
+/*
+button.html:79  */function r65()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("257").disabled=true; 
+  ;document.getElementById("258").disabled=true; 
+  ;document.getElementById("259").disabled=true; 
+  ;document.getElementById("260").disabled=true; 
+  ;document.getElementById("257").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+ 
+
+
+  ;function f65()
+{
+questionNumber=questionNumber+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="Fault";
+  ;document.getElementById("Fault").innerHTML="Wrong answers :"+NOFaults;
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("257").disabled=true; 
+  ;document.getElementById("258").disabled=true; 
+  ;document.getElementById("259").disabled=true; 
+  ;document.getElementById("260").disabled=true; 
+  ;document.getElementById("257").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+  ;//q66
+/*
+button.html:79  */function r66()
+{
+ avrage=avrage+1;
+  ;questionNumber=questionNumber+1;
+ document.getElementById("rightOrFault").innerHTML="right";
+  ;document.getElementById("average").innerHTML=avrage;
+ document.getElementById("riaht").innerHTML="Right answers :"+avrage; 
+  ;document.getElementById("theQuestionNumbers").innerHTML="theQuestionNumbers : " +questionNumber;
+ 
+
+ ;document.getElementById("261").disabled=true; 
+  ;document.getElementById("262").disabled=true; 
+  ;document.getElementById("263").disabled=true; 
+  ;document.getElementById("264").disabled=true; 
+  ;document.getElementById("261").style.background="darkturquoise"; 
+var audio=new Audio("E:\ApowerREC\click.mp3");
+audio.play();
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body></html>
